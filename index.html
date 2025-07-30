@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRN</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <img src="logo.svg" alt="Logo" class="logo"/>
+      <div class="text">
+        <span class="main">COLLEGE OF ENGINEERING PERUMON PTA</span>
+        <span class="sub">Under the Cooperative Academy of Professional Education (CAPE)</span>
+        <span class="est">Established by <span class="red">Govt. of Kerala</span></span>
+      </div>
+    </div>
+    <div class="right">
+      <button class="toggle" onclick="toggleMenu()">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="" class="link">Home</a></li>
+        <li><a href="" class="link">Academics</a></li>
+        <li><a href="" class="link">Departments</a></li>
+        <li><a href="" class="link">Facilities</a></li>
+        <li><a href="" class="link">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

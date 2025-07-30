@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Cabin", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: white;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 14px;
+  color: gray;
+}
+
+.est {
+  font-size: 14px;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.right {
+  position: relative;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #6200ea;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 999;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .link {
+    padding: 10px 0;
+    display: block;
+  }
+}
