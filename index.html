@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>College Navbar</title>
+  <title>PRN</title>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="left">
+  <nav class="nav">
+    <div class="nav-left">
       <img src="logo.svg" alt="Logo" class="logo"/>
-      <div class="text">
-        <span class="main">COLLEGE OF ENGINEERING PERUMON PTA</span>
-        <span class="sub">Under the Cooperative Academy of Professional Education (CAPE)</span>
-        <span class="est">Established by <span class="red">Govt. of Kerala</span></span>
+      <div class="title">
+        <span class="college">COLLEGE OF ENGINEERING PERUMON PTA</span>
+        <span class="caption">Under the Cooperative Academy of Professional Education (CAPE)</span>
+        <span class="established">Established by <span class="highlight">Govt. of Kerala</span></span>
       </div>
     </div>
-    <div class="right">
-      <button class="toggle" onclick="toggleMenu()">☰</button>
-      <ul class="menu" id="menu">
+    <div class="nav-right">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="menu">
         <li><a href="" class="link">Home</a></li>
         <li><a href="" class="link">Academics</a></li>
         <li><a href="" class="link">Departments</a></li>
@@ -29,8 +29,8 @@
     </div>
   </nav>
 
-  <section class="landing">
-    <div class="landing-text">
+  <section class="hero">
+    <div class="hero-text">
       <h1>A CAMPUS LIFE THAT INSPIRES, ENRICHES AND EMPOWERS</h1>
       <p>College of Engineering Perumon is dedicated to academic excellence and holistic development. With a strong focus on innovation and ethics, the institution empowers students to become responsible professionals and leaders in their fields.</p>
       <div class="accreditation">
@@ -43,8 +43,24 @@
         </ul>
       </div>
     </div>
-    <div class="landing-image">
+    <div class="hero-image">
       <img src="college.jpg" alt="College Campus"/>
+    </div>
+  </section>
+
+  <section class="principal-section">
+    <div class="principal-left">
+      <h2>Message from the Principal</h2>
+      <img src="principal.jpg" alt="Principal" class="principal-photo"/>
+      <p class="principal-name">Dr. Ananda Resmi S</p>
+    </div>
+    <div class="principal-right">
+      <p>Greetings to all!</p>
+      <p>As the principal of this esteemed institution, I am proud of our commitment to academic excellence, innovation, and community engagement.</p>
+      <p>Our college provides a welcoming and inclusive environment where all students can thrive and achieve their goals. With our highly qualified faculty and staff, state-of-the-art facilities, and diverse academic programs, we aim to prepare our students for success in their chosen careers and as responsible citizens.</p>
+      <p>I invite you to explore our website and discover what makes our college a special place to learn and grow. We are committed to providing an exceptional educational experience that will shape your future and inspire you to make a positive impact in the world.</p>
+      <p>Thank you for your interest in our college, and we look forward to welcoming you to our campus soon.</p>
+      <p>Thank you</p>
     </div>
   </section>
 

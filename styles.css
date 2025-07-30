@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  font-family: "Cabin", serif;
+  font-family: "Cabin", sans-serif;
+  color: #222;
+  background: #fff;
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,55 +13,55 @@ body {
   background: white;
 }
 
-.left {
+.nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .logo {
   height: 50px;
 }
 
-.text {
+.title {
   display: flex;
   flex-direction: column;
 }
 
-.main {
+.college {
   font-size: 18px;
   font-weight: bold;
 }
 
-.sub {
+.caption {
   font-size: 14px;
   color: gray;
 }
 
-.est {
+.established {
   font-size: 14px;
 }
 
-.red {
+.highlight {
   color: red;
   font-weight: bold;
 }
 
-.right {
+.nav-right {
   position: relative;
 }
 
-.toggle {
+.menu-btn {
   background: none;
   border: none;
+  font-size: 20px;
   cursor: pointer;
   display: none;
-  font-size: 20px;
 }
 
-.menu {
+.nav-links {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -69,76 +71,67 @@ body {
   text-decoration: none;
   font-size: 16px;
   color: black;
-  transition: color 0.3s;
-}
-
-.link:hover {
-  color: #6200ea;
 }
 
 @media (max-width: 768px) {
-  .toggle {
+  .menu-btn {
     display: block;
   }
 
-  .menu {
+  .nav-links {
     display: none;
     position: absolute;
     top: 50px;
     right: 0;
     background: white;
     flex-direction: column;
-    width: 200px;
+    width: 180px;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    z-index: 999;
   }
 
-  .menu.show {
+  .nav-links.show {
     display: flex;
   }
 
   .link {
-    padding: 10px 0;
-    display: block;
+    padding: 8px 0;
   }
 }
 
-.landing {
+.hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+  gap: 20px;
 }
 
-.landing-text {
+.hero-text {
   flex: 1;
   max-width: 600px;
   padding: 20px;
 }
 
-.landing-text h1 {
-  font-size: 28px;
-  font-weight: bold;
+.hero-text h1 {
+  font-size: 26px;
   margin-bottom: 20px;
 }
 
-.landing-text p {
+.hero-text p {
   font-size: 16px;
-  margin-bottom: 20px;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .accreditation h2 {
-  font-size: 20px;
-  color: #000;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .accreditation ul {
   padding-left: 20px;
+  margin: 0;
 }
 
 .accreditation li {
@@ -146,26 +139,77 @@ body {
   margin-bottom: 5px;
 }
 
-.landing-image {
+.hero-image {
   flex: 1;
   max-width: 500px;
   padding: 20px;
 }
 
-.landing-image img {
+.hero-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-  .landing {
+  .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .landing-text, .landing-image {
+  .hero-text, .hero-image {
     max-width: 100%;
     padding: 10px;
+  }
+}
+
+.principal-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px 40px;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.principal-left {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.principal-left h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.principal-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.principal-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.principal-right {
+  flex: 1;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .principal-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .principal-left, .principal-right {
+    max-width: 100%;
   }
 }
