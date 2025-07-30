@@ -104,3 +104,68 @@ body {
     display: block;
   }
 }
+
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.landing-text {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.landing-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.landing-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.accreditation h2 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.accreditation ul {
+  padding-left: 20px;
+}
+
+.accreditation li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.landing-image {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.landing-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-text, .landing-image {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
