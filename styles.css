@@ -427,3 +427,175 @@ body {
   }
 }
 
+/* Signup page */
+.heading{
+  text-align: center;
+}
+.register-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Cabin", sans-serif;
+}
+
+.form-field {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gender-group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.gender-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 6px;
+}
+
+.terms {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.terms-link {
+  color: #222;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .form-field,
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .gender-label,
+  .gender-option,
+  .terms {
+    font-size: 14px;
+  }
+}
+
+/* login page */
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0 20px;
+  font-family: "Cabin", sans-serif;
+  color: #222;
+}
+
+.register-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Cabin", sans-serif;
+}
+
+.form-field {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gender-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 6px;
+}
+
+.terms {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.terms-link {
+  color: #222;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .form-field,
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .gender-option,
+  .terms {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}
