@@ -3,6 +3,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $n=$_POST["name"];
     $e=$_POST["email"];
     $m=$_POST["message"];
+    $conn=new mysqli("localhost","root","","cep");
+    if($conn->connect_error){
+        die("Connection failed: ".$conn->connect_error);
+    }
+    $stmt=$conn->prepare("INSERT INTO messages (name,email,message) VALUES (?,?,?)");
+    $stmt->bind_param("sss",$n,$e,$m);
+    $stmt->execute();
+    $stmt->close();
+    $conn->close();
 }
 ?>
 <!DOCTYPE html>
