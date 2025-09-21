@@ -1,18 +1,17 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f2f5;
+    background: #222325;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     min-height: 100vh;
 }
 
 .result-box {
-    background: #fff;
-    padding: 30px 40px;
+    background: white;
+    padding: 10px 40px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     max-width: 520px;
     width: 100%;
 }

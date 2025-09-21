@@ -3,7 +3,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $n=$_POST["name"];
     $e=$_POST["email"];
     $m=$_POST["message"];
-    $conn=new mysqli("localhost","root","","cep");
+    $conn=new mysqli("localhost","root","","collegeadn");
     if($conn->connect_error){
         die("Connection failed: ".$conn->connect_error);
     }
